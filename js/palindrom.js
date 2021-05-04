@@ -5,42 +5,23 @@
 var parola = prompt('inserisci parola');
 console.log(parola);
 
-var rev = parola.split("").reverse().join("");
-console.log(rev)
+// var rev = parola.split("").reverse().join("");
+// console.log(rev)
 //non capisco gli argomenti undefined
 
-if ( parola === rev) {
+
+function alContrario(parola) {
+    var rev = "";
+    rev = parola.split("").reverse().join("");
+    return rev
+}
+
+var stringaGirata = alContrario(parola);
+console.log(stringaGirata);
+
+if ( parola === stringaGirata) {
     console.log('ok');
 } else {
     console.log('nope');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
